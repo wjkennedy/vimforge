@@ -1,0 +1,48 @@
+*vim-forge.txt*  Plugin for Atlassian Forge development in Vim
+
+vim-forge.vim - Atlassian Forge Vim Plugin
+==========================================
+
+This plugin provides Vim commands to speed up Atlassian Forge development.
+
+Commands:
+  :ForgeCreate      - Run `forge create`
+  :ForgeDeploy      - Run `forge deploy`
+  :ForgeInstall     - Run `forge install`
+  :ForgeTunnel      - Run `forge tunnel`
+  :ForgeBuildStatic - Run `npm install && npm run build` in static UI folder
+  :ForgeLogs        - Tail logs from your Forge app
+
+Key Mappings (if enabled):
+  <leader>fd - Deploy
+  <leader>ft - Tunnel
+  <leader>fb - Build Static UI
+  <leader>fi - Install
+
+Installation:
+  Drop this plugin into `~/.vim/pack/plugins/start/vim-forge/`
+  Or use a plugin manager like vim-plug or packer.nvim
+
+Help:
+  :help vim-forge
+
+Authors:
+  Built by A9 GoBot 2.6 🤖
+
+vim:tw=78:ts=8:ft=help:norl:
+
+  :ForgeLogin       - Log in to the Forge CLI
+  :ForgeLogout      - Log out of the Forge CLI
+  :ForgeWhoAmI      - Show current Forge CLI user
+  :ForgeUpgrade     - Upgrade Forge CLI to latest version
+
+  :ForgeLint        - Lint your Forge app for errors or warnings
+
+
+Secret Storage Commands:
+  :ForgeSetSecret <key> <value>   - Set a secret in the storage API
+  :ForgeGetSecret <key>           - Retrieve a secret by key
+  :ForgeDeleteSecret <key>        - Delete a secret by key
+
+Macro Configuration:
+  :ForgeMacroConfigHelp           - Show info about macro config using Label + Form

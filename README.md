@@ -1,4 +1,5 @@
-# Forge Dev v0 – Vim + Tmux + Forge CLI
+# A9 Forge Dev v0 – Vim + Tmux + Forge CLI
+![](https://a9group.net/a9logo.png)
 
 ## 🛠 Features
 - Vim plugin for Forge CLI
@@ -14,4 +15,5 @@
 5. Start coding!
 
 ---
-Built by A9 GoBot 2.6 🧠
+Built by A9 GoBot 2.6 
+

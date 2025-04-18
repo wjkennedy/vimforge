@@ -20,3 +20,15 @@ nnoremap <leader>fb :ForgeBuildStatic<CR>
 nnoremap <leader>fi :ForgeInstall<CR>
 
 au BufRead,BufNewFile manifest.yml set filetype=yaml
+command! ForgeLogin :!forge login
+command! ForgeLogout :!forge logout
+command! ForgeWhoAmI :!forge whoami
+command! ForgeUpgrade :!npm install -g @forge/cli@latest
+command! ForgeLint :!forge lint
+" Secret Storage Commands
+command! -nargs=+ ForgeSetSecret :call system('forge tunnel & sleep 2 && node -e "require('@forge/api').storage.setSecret(\"'.<args>.'\")"')
+command! -nargs=1 ForgeGetSecret :echo system('node -e "require('@forge/api').storage.getSecret(\"'.<args>.'\").then(console.log)"')
+command! -nargs=1 ForgeDeleteSecret :call system('node -e "require('@forge/api').storage.deleteSecret(\"'.<args>.'\")"')
+
+" Macro Config Dev Command Stub (placeholder for scaffolding helpers)
+command! ForgeMacroConfigHelp :echo "Use Label + Form components in UI Kit for macro config. See :help vim-forge"

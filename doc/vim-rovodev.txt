@@ -1,0 +1,27 @@
+*vim-rovodev.txt*  Plugin for Rovodev ACLI commands in Vim
+
+vim-rovodev.vim - Rovodev ACLI Vim Plugin
+=========================================
+
+This plugin provides Vim commands that wrap the Rovodev ACLI tool.
+
+Commands:
+  :RovoDeploy      - Run `acli rovodev deploy`
+  :RovoTunnel      - Run `acli rovodev tunnel`
+  :RovoInstall     - Run `acli rovodev install`
+  :RovoLogs        - Run `acli rovodev logs`
+
+Key Mappings (if enabled):
+  <leader>rd - Deploy
+  <leader>rt - Tunnel
+  <leader>ri - Install
+  <leader>rl - Logs
+
+Installation:
+  Drop this plugin into `~/.vim/pack/plugins/start/vim-rovodev/`
+  Or use a plugin manager like vim-plug or packer.nvim
+
+Help:
+  :help vim-rovodev
+
+vim:tw=78:ts=8:ft=help:norl:

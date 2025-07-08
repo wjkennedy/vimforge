@@ -1,13 +1,13 @@
-# A9 Forge Dev v0 – Vim + Tmux + Forge CLI
+# A9 Forge Dev v1 – Vim + Tmux + Forge CLI + Rovo Dev
 ![](https://a9group.net/a9logo.png)
 
-## 🛠 Features
+## Features
 - Vim plugin for Forge CLI
 - **New:** Vim plugin for Rovodev ACLI
 - Tmux scripts to launch dev sessions for Forge or Rovodev
 - Example .vimrc (`example.vimrc`)
 
-## 📦 How to Use
+## How to Use
 
 1. Extract ZIP
 2. Move `plugin/vim-forge.vim` to `~/.vim/pack/plugins/start/vim-forge/plugin/`
@@ -23,6 +23,7 @@
 After installing `vim-rovodev.vim`, use commands like `:RovoDeploy` and `:RovoTunnel`
 which simply call `acli rovodev deploy` and `acli rovodev tunnel`.  Mappings under
 `<leader>r` mirror the Forge mappings.
+
 You can also start a full tmux workflow using `scripts/rovodev-dev.sh`.
 
 ---

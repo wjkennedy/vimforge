@@ -5,7 +5,7 @@
 - Vim plugin for Forge CLI
 - **New:** Vim plugin for Rovodev ACLI
 - Tmux scripts to launch dev sessions for Forge or Rovodev
-- Example .vimrc
+- Example .vimrc (`example.vimrc`)
 
 ## 📦 How to Use
 
@@ -16,6 +16,7 @@
    (`APP_DIR` and optional `STATIC_DIR` variables)
 5. Run the script you need: `./scripts/forge-dev.sh` or `./scripts/rovodev-dev.sh`
 6. Start coding!
+7. See `example.vimrc` for a minimal Vim configuration that loads the plugins and sets up the leader mappings.
 
 ### Rovodev ACLI Plugin
 
